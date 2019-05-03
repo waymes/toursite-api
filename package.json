@@ -1,0 +1,17 @@
+{
+  "name": "toursite-api",
+  "version": "1.0.0",
+  "description": "Api for toursite",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
