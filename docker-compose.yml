@@ -9,7 +9,7 @@ services:
       - postgres
     links:
       - postgres
-    env_file: .env.docker
+    env_file: .env
     volumes:
       - .:/app
   
@@ -17,6 +17,6 @@ services:
     image: postgres
     ports:
       - "5432:5432"
-    env_file: .env.docker
+    env_file: .env
     volumes:
       - ./data:/var/lib/postgresql/data
