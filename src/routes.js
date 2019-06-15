@@ -1,5 +1,5 @@
+import tripRoutes from './api/trips/trip.routes';
+
 export default (app) => {
-  app.get('/', (req, res) => {
-    res.send('hey man');
-  });
+  app.use('/trips', tripRoutes);
 };

@@ -9,6 +9,14 @@ const schema = {
     autoIncrement: true,
   },
   title: DataTypes.STRING,
+  createdAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
+    allowNull: true,
+  },
 };
 
 export default schema;

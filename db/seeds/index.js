@@ -2,7 +2,7 @@ const bulkData = [
   {
     tableName: 'trips',
     records: [
-      { id: '1', title: 'Тур в Иран' },
+      { title: 'Тур в Иран', createdAt: new Date() },
     ],
   },
 ];
