@@ -9,5 +9,10 @@ export default {
     },
     host: process.env.DB_HOST,
     dialect: 'postgres',
+    define: {
+      timestamps: false,
+    },
   },
+  sendGridKey: process.env.SENDGRID_KEY,
+  ownerEmail: process.env.OWNER_EMAIL,
 };

@@ -1,6 +1,6 @@
 import Sequelize, { DataTypes } from 'sequelize';
 
-export const tableName = 'trips';
+export const tableName = 'subscribers';
 
 const schema = {
   id: {
@@ -8,15 +8,19 @@ const schema = {
     primaryKey: true,
     autoIncrement: true,
   },
-  title: DataTypes.STRING,
+  name: DataTypes.STRING,
+  email: {
+    type: DataTypes.STRING,
+    validate: {
+      isEmail: true,
+    },
+    allowNull: false,
+    unique: true,
+  },
   createdAt: {
     type: DataTypes.DATE,
     allowNull: false,
     defaultValue: Sequelize.NOW,
-  },
-  updatedAt: {
-    type: DataTypes.DATE,
-    allowNull: true,
   },
 };
 
