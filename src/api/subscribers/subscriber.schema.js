@@ -17,6 +17,7 @@ const schema = {
     allowNull: false,
     unique: true,
   },
+  phone: DataTypes.STRING,
   createdAt: {
     type: DataTypes.DATE,
     allowNull: false,

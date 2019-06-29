@@ -18,6 +18,10 @@ const schema = {
     type: DataTypes.DATE,
     allowNull: true,
   },
+  image: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 };
 
 export default schema;
