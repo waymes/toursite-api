@@ -8,20 +8,43 @@ const schema = {
     primaryKey: true,
     autoIncrement: true,
   },
-  title: DataTypes.STRING,
   createdAt: {
     type: DataTypes.DATE,
-    allowNull: false,
     defaultValue: Sequelize.NOW,
   },
-  updatedAt: {
+  updatedAt: DataTypes.DATE,
+  dateFrom: {
     type: DataTypes.DATE,
-    allowNull: true,
+    allowNull: false,
+  },
+  dateTo: {
+    type: DataTypes.DATE,
+    allowNull: false,
   },
   image: {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  title1: DataTypes.STRING,
+  title2: DataTypes.STRING,
+  destination: DataTypes.STRING,
+  name: DataTypes.STRING,
+  difficultyLevel: DataTypes.INTEGER,
+  firstBlockTitle: DataTypes.STRING,
+  firstBlockItems: DataTypes.JSON,
+  secondBlockTitle: DataTypes.STRING,
+  secondBlockItems: DataTypes.JSON,
+  thirdBlockTitle: DataTypes.STRING,
+  thirdBlockItems: DataTypes.JSON,
+  fourthBlockTitle: DataTypes.STRING,
+  fourthBlockItems: DataTypes.JSON,
+  fifthBlockTitle: DataTypes.STRING,
+  fifthBlockItems: DataTypes.JSON,
+  price: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  additionalExpenses: DataTypes.JSON,
 };
 
 export default schema;

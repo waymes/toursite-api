@@ -1,15 +1,4 @@
-import Sequelize from 'sequelize';
-
-import config from '../src/config';
-
-const { connection, ...options } = config.database;
-
-const db = new Sequelize(
-  connection.database,
-  connection.username,
-  connection.password,
-  options,
-);
+import db from '../src/db';
 
 export const drop = () => {
   db.getQueryInterface().dropAllTables().then(() => process.exit());

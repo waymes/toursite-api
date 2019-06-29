@@ -11,6 +11,7 @@ export default {
     dialect: 'postgres',
     define: {
       timestamps: false,
+      freezeTableName: true,
     },
   },
   sendGridKey: process.env.SENDGRID_KEY,
