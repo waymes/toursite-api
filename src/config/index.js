@@ -13,6 +13,7 @@ export default {
       timestamps: false,
       freezeTableName: true,
     },
+    logging: false,
   },
   sendGridKey: process.env.SENDGRID_KEY,
   ownerEmail: process.env.OWNER_EMAIL,
