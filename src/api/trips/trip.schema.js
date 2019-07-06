@@ -29,7 +29,6 @@ const schema = {
   title2: DataTypes.STRING,
   destination: DataTypes.STRING,
   name: DataTypes.STRING,
-  difficultyLevel: DataTypes.INTEGER,
   firstBlockTitle: DataTypes.STRING,
   firstBlockItems: DataTypes.JSON,
   secondBlockTitle: DataTypes.STRING,

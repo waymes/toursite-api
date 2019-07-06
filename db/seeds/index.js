@@ -133,7 +133,6 @@ const bulkData = [
         fifthBlockItems: JSON.stringify(fifthBlockItems),
         price: 1099,
         additionalExpenses: JSON.stringify(additionalExpenses),
-        difficultyLevel: 4,
       },
       {
         createdAt: new Date(),
@@ -156,7 +155,6 @@ const bulkData = [
         fifthBlockItems: JSON.stringify(fifthBlockItems),
         price: 1199,
         additionalExpenses: JSON.stringify(additionalExpenses),
-        difficultyLevel: 3,
       },
       {
         createdAt: new Date(),
@@ -179,7 +177,6 @@ const bulkData = [
         fifthBlockItems: JSON.stringify(fifthBlockItems),
         price: 900,
         additionalExpenses: JSON.stringify(additionalExpenses),
-        difficultyLevel: 2,
       },
       {
         createdAt: new Date(),
@@ -202,7 +199,6 @@ const bulkData = [
         fifthBlockItems: JSON.stringify(fifthBlockItems),
         price: 510,
         additionalExpenses: JSON.stringify(additionalExpenses),
-        difficultyLevel: 3,
       },
     ],
   },
