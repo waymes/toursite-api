@@ -17,4 +17,6 @@ export default {
   },
   sendGridKey: process.env.SENDGRID_KEY,
   ownerEmail: process.env.OWNER_EMAIL,
+  jwtSecret: process.env.JWT_SECRET,
+  jwtExpiration: process.env.JWT_EXPIRATION,
 };

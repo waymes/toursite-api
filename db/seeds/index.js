@@ -206,6 +206,12 @@ const bulkData = [
       },
     ],
   },
+  {
+    tableName: 'admin_users',
+    records: [
+      { email: 'admin@test.test', password: '123456' },
+    ],
+  },
 ];
 
 // eslint-disable-next-line import/prefer-default-export
@@ -218,6 +224,7 @@ export const up = (queryInterface, { transaction = null } = {}) => {
       { transaction, individualHooks: true, hooks: true },
     ));
 
+    // eslint-disable-next-line no-console
     console.log(`Inserting ${records.length} records into ${tableName}`);
   });
 
