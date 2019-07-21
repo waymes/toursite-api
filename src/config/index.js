@@ -1,6 +1,6 @@
 export default {
   PORT: process.env.PORT,
-  CLIENT_URLS: ['http://localhost:3000', 'https://toursite.herokuapp.com'],
+  CLIENT_URLS: ['http://localhost:3000', 'http://localhost:3001'],
   database: {
     connection: {
       database: process.env.POSTGRES_DB,

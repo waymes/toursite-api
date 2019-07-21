@@ -31,9 +31,9 @@ export const get = async (req, res, next) => {
 
 export const subscribe = async (req, res, next) => {
   try {
-    const { email } = req.body;
+    const { email, name } = req.body;
 
-    const existingSubscriber = await Subscriber.findOne({ where: { email } });
+    const existingSubscriber = await Subscriber.findOne({ where: { email, name } });
     if (existingSubscriber) {
       return next(Boom.badData('Subscription already exists'));
     }
@@ -63,6 +63,7 @@ export const request = async (req, res, next) => {
     if (!subscriber) {
       subscriber = await Subscriber.create({ email, name, phone });
     }
+    await subscriber.update({ email, name, phone });
 
     const msgToSubscriber = {
       to: subscriber.email,
