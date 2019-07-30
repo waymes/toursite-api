@@ -30,7 +30,12 @@ const bulkData = [
   {
     tableName: 'admin_users',
     records: [
-      { email: 'admin@test.test', password: '123456' },
+      {
+        email: 'admin@test.test',
+        password: '123456',
+        firstName: 'Alex',
+        lastName: 'Zhossan',
+      },
     ],
   },
 ];

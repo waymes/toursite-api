@@ -8,6 +8,8 @@ const schema = {
     primaryKey: true,
     autoIncrement: true,
   },
+  firstName: DataTypes.STRING,
+  lastName: DataTypes.STRING,
   email: {
     type: DataTypes.STRING,
     validate: {

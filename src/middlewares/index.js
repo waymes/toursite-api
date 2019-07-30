@@ -1,2 +1,3 @@
 export { default as allowCrossDomain } from './allow-cross-domain';
 export { default as errorHandler } from './error-handler';
+export * from './auth';
