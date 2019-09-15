@@ -41,7 +41,7 @@ const bulkData = [
         blockItems3: JSON.stringify(constants.iranBlockItems3),
         blockTitle4: 'Посмотрите, как это было в прошлый раз:',
         blockItems4: JSON.stringify(constants.iranBlockItems4),
-        price: 1099,
+        price: 1399,
         includedList: JSON.stringify(constants.iranIncludedList),
         additionalList: JSON.stringify(constants.iranAdditionalList),
         description: constants.iranDescription,
